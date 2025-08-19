@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(250, 188, 164, 0.397); 
+    padding: 15px 0;
+    z-index: 10; 
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 5px;
+}
+
+
+
+
+section.full-screen-image {
+    background-image: url('2.png'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+section.full-screen-image h2 {
+    color: white;
+    text-align: center;
+    padding-top: 50vh;
+    margin: 0;
+}
+
+
+
+
+main section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    align-items: center; 
+}
+
+
+
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+}
+
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 60%; 
+    text-align: left; 
+}
+
+
+
+
+.text-section .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dd9c90;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+#test-psicologico {
+    padding: 40px;
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+}
+
+
+footer {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+}

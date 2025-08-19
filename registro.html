@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - PsicoGuía</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Nosotros</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="profesionales.html">Profesionales</a></li>
+            <li><a href="registro.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding-top: 60px;">
+        <!-- User Registration Form -->
+        <section id="registro" style="padding-top:20px;">
+          <h2>Registro de Usuario</h2>
+          <form action="index.html" method="post"> <!-- Change action to index.html -->
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre" required><br>
+
+              <label for="apellido">Apellido:</label><br>
+              <input type="text" id="apellido" name="apellido" required><br>
+
+              <label for="correo">Correo Electrónico:</label><br>
+              <input type="email" id="correo" name="correo" required><br>
+
+              <label for="sexo">Sexo:</label><br>
+              <select id="sexo" name="sexo" required>
+                  <option value="">Seleccione...</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+              </select><br>
+
+              <input type="submit" value="Registrar">
+          </form>
+      </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="text-align:center; padding-top:20px;">
+       &copy; 2024 PsicoGuía. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

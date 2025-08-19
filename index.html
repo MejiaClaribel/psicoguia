@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsicoGuía</title>
+    <link rel="stylesheet" href="PsicoGuiaStyle.css">
+
+
+</head>
+<body>
+    
+    <!-- Navegación sutil superpuesta a la imagen -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Nosotros</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="profesionales.html">Profesionales</a></li>
+            <li><a href="registro.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección con la imagen de fondo -->
+    <section class="full-screen-image">
+        <h2>¡Encantado de que estes aqui!</h2>
+    </section>
+
+    <main>
+
+        <section id="sobre-nosotros" class="split-section">
+            <div class="image-section">
+                <img src="nose.png" alt="Sobre Nosotros">
+            </div>
+            <div class="text-section">
+                <h2>Sobre Nosotros</h2>
+                <p>PsicoGuia es una página que tiene como objetivo permitirles dar una primera entrevista desde la intimidad de su dispositivo. </p>
+                <p>¿En que consiste? Se realizaran una serie de preguntar generales para que podamos recomendarle a un especialista adecuado a sus necesidades. Es importante para nosotros que usted sepa que esto no es diagnostico, eso lo tendra que trabajar exclusivamente en terapia.</p>
+                <p>¿Cuales son los beneficios de ustilizar a PsicoGuia? Si esta interesado en comenzar un tratamiento terapuetico, PsicoGuia les proporsionara acercarse mas a sus objetivos con su futuro terapeuta. Esto tambien ayudara al profesional y a usted de manera conjunta a tener un tratamiento mas proactivo y eficiente ¡Sabemos lo duro que puede ser expresarse frente a frente!.</p>
+                <p>¿Por que somos PsicoGuia? Sabemos, comprendemos y trabajamos con lo aterrador que puede ser aclarar los objetivos iniciales al momento de pensar ¿Quiero ir a terapia? ¿La necesito? ¿Por que? Nosotros con nuestra entrevista general podemos ofrecerle una guia inicial al futuro profecional con el que va a trabajar sus objetivos, metas o preocupaciones de todo tipo en esta nueva etapa de su vida.
+                    <p>Queremos ofrecer una herramienta que facilite su disposicion a la hora de abrirse emocionalmente al profesional.
+                    Por lo tanto, considere a PsicoGuia como un espacio seguro donde esperamos que pueda contestar las preguntas con la mayor sinceridad para que asi sea redirigido y recomendado con un profesional que sea ideal a sus necesidad en esta entrevista</p>
+                    <a href="#" class="button">Ver Más</a>
+            </div>
+
+        </section>
+       
+
+        <section id="test-psicologico">
+            <h2>Primera Entrevista</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <!-- Preguntas del formulario -->
+                <fieldset>
+                    <legend>Responde las siguientes preguntas</legend>
+                    <p>1. ¿Te sientes ansioso con frecuencia?</p>
+                    <input type="radio" id="ansiedad-si" name="ansiedad" value="si" required>
+                    <label for="ansiedad-si">Sí</label><br>
+                    <input type="radio" id="ansiedad-no" name="ansiedad" value="no">
+                    <label for="ansiedad-no">No</label><br>
+                    <input type="radio" id="ansiedad-talvez" name="ansiedad" value="talvez">
+                    <label for="ansiedad-talvez">No lo se</label><br><br>
+
+                    <p>2. ¿Te cuesta dormir por las noches?</p>
+                    <input type="radio" id="insomnio-si" name="insomnio" value="si" required>
+                    <label for="insomnio-si">Sí</label><br>
+                    <input type="radio" id="insomnio-no" name="insomnio" value="no">
+                    <label for="insomnio-no">No</label><br>
+                    <input type="radio" id="insomnio-talvez" name="insomnio" value="talvez">
+                    <label for="insomnio-talvez">No lo se</label><br><br>
+
+                    <p>3. ¿Te sientes comodo con tu circulo social actual?</p>
+                    <input type="radio" id="social-si" name="social" value="si" required>
+                    <label for="social-si">Sí</label><br>
+                    <input type="radio" id="social-no" name="social" value="no">
+                    <label for="social-no">No</label><br>
+                    <input type="radio" id="social-talvez" name="social" value="talvez">
+                    <label for="social-talvez">No lo se</label><br><br>
+
+                    <p>4. ¿Confias en tu juicio personal?</p>
+                    <input type="radio" id="personal-si" name="personal" value="si" required>
+                    <label for="personal-si">Sí</label><br>
+                    <input type="radio" id="personal-no" name="personal" value="no">
+                    <label for="personal-no">No</label><br>
+                    <input type="radio" id="personal-talvez" name="personal" value="talvez">
+                    <label for="personal-talvez">No lo se</label><br><br>
+
+                    <p>5. ¿Te consideras una buena persona?</p>
+                    <input type="radio" id="juicio-si" name="juicio" value="si" required>
+                    <label for="juicio-si">Sí</label><br>
+                    <input type="radio" id="juicio-no" name="juicio" value="no">
+                    <label for="juicio-no">No</label><br>
+                    <input type="radio" id="juicio-talvez" name="juicio" value="talvez">
+                    <label for="juicio-talvez">No lo se</label><br><br>
+
+                    <p>6. ¿Te sientes preocupado por algo especifico en este momento?</p>
+                    <input type="radio" id="preocupacion-si" name="preocupacion" value="si" required>
+                    <label for="preocupacion-si">Sí</label><br>
+                    <input type="radio" id="preocupacion-no" name="preocupacion" value="no">
+                    <label for="preocupacion-no">No</label><br>
+                    <input type="radio" id="preocupacion-talvez" name="preocupacion" value="talvez">
+                    <label for="perocupacion-talvez">No lo se</label><br><br>
+
+                    <p>7. ¿Tienes a alguien cercano con quien hablar de tus problemas personales?</p>
+                    <input type="radio" id="cercano-si" name="cercano" value="si" required>
+                    <label for="cercano-si">Sí</label><br>
+                    <input type="radio" id="cercano-no" name="cercano"value="no">
+                    <label for="cercano-no">No</label><br>
+                    <input type="radio" id="cercano-talvez" name="cercano" value="talvez">
+                    <label for="cercano-talvez">No lo se</label><br><br>
+
+                    <p>8. ¿Tienes dificulates para concentrarte en tus tareas diarias?</p>
+                    <input type="radio" id="diario-si" name="diario" value="si" required>
+                    <label for="diario-si">Sí</label><br>
+                    <input type="radio" id="diario-no" name="diario" value="no">
+                    <label for="diario-no">No</label><br>
+                    <input type="radio" id="diario-talvez" name="diario" value="talvez">
+                    <label for="diario-talvez">No lo se</label><br><br>
+
+                    <p>9. ¿Has notado cambios recientes en tu apetito o habitos alimenticios?</p>
+                    <input type="radio" id="alimento-si" name="alimento" value="si" required>
+                    <label for="alimento-si">Sí</label><br>
+                    <input type="radio" id="alimento-no" name="alimento" value="no">
+                    <label for="alimento-no">No</label><br>
+                    <input type="radio" id="alimento-talvez" name="alimento" value="talvez">
+                    <label for="alimento-talvez">No lo se</label><br><br>
+
+                    <p>10. ¿Te sientes sobrecargado por tus responsabilidades?</p>
+                    <input type="radio" id="responsabilidad-si" name="responsabilidad" value="si" required>
+                    <label for="responsabilidad-si">Sí</label><br>
+                    <input type="radio" id="responsabilidad-no" name="responsabilidad" value="no">
+                    <label for="responsabilidad-no">No</label><br>
+                    <input type="radio" id="responsabilidad-talvez" name="responsabilidad" value="talvez">
+                    <label for="responsabilidad-talvez">No lo se</label><br><br>
+
+                    <p>11. ¿Consideras tener un buen control sobre tus emociones?</p>
+                    <input type="radio" id="controlemocion-si" name="controlemocion" value="si" required>
+                    <label for="controlemocion-si">Sí</label><br>
+                    <input type="radio" id="controlemocion-no" name="controlemocion" value="no">
+                    <label for="controlemocion-no">No</label><br>
+                    <input type="radio" id="controlemocion-talvez" name="controlemocion" value="talvez">
+                    <label for="controlemocion-talvez">No lo se</label><br><br>
+
+                    <p>12. ¿Consideras tener un control sano sobre tus pensamientos?</p>
+                    <input type="radio" id="controlpensamiento-si" name="controlpensamiento" value="si" required>
+                    <label for="controlpensamiento-si">Sí</label><br>
+                    <input type="radio" id="controlpensamiento-no" name="controlpensamiento" value="no">
+                    <label for="controlpensamiento-no">No</label><br>
+                    <input type="radio" id="controlpensamiento-talvez" name="controlpensamiento" value="talvez">
+                    <label for="controlpensamiento-talvez">No lo se</label><br><br>
+
+                    <p>13. ¿Tienes alguna razon/motivacion especifica para asistir a terapia?</p>
+                    <input type="radio" id="razon-si" name="razon" value="si" required>
+                    <label for="razon-si">Sí</label><br>
+                    <input type="radio" id="razon-no" name="razon" value="no">
+                    <label for="razon-no">No</label><br>
+                    <input type="radio" id="razon-talvez" name="razon" value="talvez">
+                    <label for="razon-talvez">No lo se</label><br><br>
+
+                    <!-- Agrega más preguntas aquí de manera similar -->
+                </fieldset>
+
+                <!-- Botones de envío y restablecer -->
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 PsicoGuia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
